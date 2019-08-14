@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form login</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+    integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+    integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
+    <!-- Latest compiled JavaScript -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+</head>
+
+<body>
+
+    <div id="login_div">
+        <div id="contentbody">
+            <div id="header">
+                <img src="images/blood.jpg" alt="this is the logo...">
+                <!-- <img class="bloodimage" src="images/blood.png" alt="this is blood donation"> -->
+            </div>
+            <div id="menu">
+                <nav class="navbar navbar-inverse" id="pera">
+                    <div class="container-fluid">
+                        <div class="navbar-header" id="">
+                            <a class="navbar-brand" href="index.html">BloodBank</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li><a href="main.html">Home</a></li>
+                            <li><a href="wtb.html">why to give blood</a></li>
+                            <li><a href="form.html">Donate Blood</a></li>
+                            <li><a href="donors.html">Our Blood Donors</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                            <li class="active"><a href="javascript:void(0);"><span
+                                        class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+                <div id="form">
+                    <form action="#" id="login_form" class="form">
+                        <img id="lgo" src="images/download.png" alt="" width="150px"><br>
+                        <label for="useremail">Email:</label><br>
+                        <input type="email" id="email_flied" required><br>
+                        <label for="pass" id="pas">Password:</label><br>
+                        <input type="password" id="password_flied" required><br>
+                        <button id="btnLogin" >Login</button><br>
+                        <button id="btn" onclick="signUp();">Create Account</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+<script>
+
+  function signUp(){
+      window.location.href ="sign-in.html";
+  }
+</script>
+<script src="script/app.js"></script>
+
+</body>
+
+</html>

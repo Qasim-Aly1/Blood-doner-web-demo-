@@ -1,0 +1,268 @@
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contentbody{
+    margin: 2% 10% 0 10%;
+    border: 1px greenyellow solid;
+    /* background-color: #eeeeee;  */
+}
+#header{
+    margin: auto;
+    padding: 0%;
+    height: 100px;
+    background-color: #222222;
+}
+#header img{
+    width: 10%;
+    height: 99%;
+    border-radius: 2cm;
+}
+#showcase{
+    /* background-color: #ccc9c9; */
+    width: 42%;
+    padding: 2%;
+    margin: 1% 0 2% 0;
+    float: left;
+
+}
+#showcase h2{
+    color: #5c5cb3;
+    font-weight: bold;
+
+}
+
+#leftimage{
+    float: right;
+    /* border: 1px greenyellow solid; */
+    width: 28%;
+    height: 313px;
+    /* padding: 1%; */
+    margin: 2% 0 2% auto;
+    
+}
+#leftimage img{
+    width: 99%;
+    height: 310px;
+    border-radius: 5cm;
+}
+#aside{
+    /* border: 1px greenyellow solid; */
+    padding: 1%;
+    width: 30%;
+    height: 310px;
+    margin-top: 3.5%;
+    margin-left: 40%;
+
+}
+#aside h2{
+    color: #5c5cb3;
+    font-weight: bold;
+}
+#aside2{
+    /* border: 1px greenyellow solid; */
+    padding: 1%;
+    width: 60%;
+    height: 370px;
+    margin-left: 40%;
+}
+#aside2 h2{
+    color: #5c5cb3;
+    font-weight: bold;
+}
+#aside2 img{
+    width: 80%;
+    height: 245px;
+    margin-top: 0; 
+}
+#aside2 h2{
+    padding: 1%;
+    margin-top: 2%; 
+
+}
+#aside3 p{
+    width: 75%;
+    margin: 5% 10% 4% 10%;
+    text-align: center;
+}
+#aside3 h2{
+    color: #5c5cb3;
+    /* font-weight: bold; */
+}
+#aside4{
+    /* border: 1px greenyellow solid; */
+    width: 50%;
+   padding: 2%;
+   margin: 0;
+}
+#aside4 h2{
+    color: #5c5cb3;
+    /* font-weight: bold; */
+}
+#image{
+     /* border: 1px #d0d3cc solid; */
+     width: 44%;
+     height: 450px;
+     float: right; 
+     padding: 2%;
+     margin-top: 1%;
+
+}
+#image img{
+    width: 99%;
+    height: 99%;
+    border-radius: 2rem;
+}
+#aside5{
+    /* border: 1px greenyellow solid; */
+    /* width: 95%; */
+    padding: 4% 15% 4% 2%;
+
+}
+#aside5 h2{
+    color: #5c5cb3;
+    /* font-weight: bold; */
+}
+/* form */
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Overwrite default styles of hr */
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  
+  /* Set a style for the submit button */
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+  .registerbtn:hover {
+    opacity: 1;
+  }
+  
+  /* Add a blue text color to links */
+  a {
+    color: dodgerblue;
+  }
+  
+  /* Set a grey background color and center the text of the "sign in" section */
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+#footer{
+    /* border: 1px greenyellow solid; */
+    padding: 3% 35% 3% 35%;
+    background-color: #222222;;
+    color: #cccccc;
+}
+
+/* media  */
+@media(max-width:768px){
+    body{
+        /* display: block; */
+        position: absolute;
+    }
+    #header img{
+        width: 15%;
+        margin-left: 1%;
+    }
+    #menu .navbar-brand{
+        text-align: center;
+    }
+    #showcase{
+        width: 100%;
+        display: block;
+    }
+    #aside{
+        width: 98%;
+        margin: 2%;
+    }
+    #aside2, #aside3, #aside4, #aside5 {
+        width: 98%;
+        padding: 2%;
+    }
+    #aside2 {
+        width: 98%;
+        float: left;
+        margin-top: 30%;    
+        margin-left: 0%;    
+    }
+    #aside2 img{
+        width: 88%;
+    }
+
+    #image{
+        float: left;
+        width: 100%;
+    }
+    #leftimage{
+        width: 88%;
+    }
+    #leftimage img{
+        width: 75%;        
+    }
+    .containe{
+        width: 98%;
+        padding: 4%;
+    }
+    input{
+        width: 98%;
+    }
+}
+@media(max-width:360px){
+    #menu {
+        text-align: center;
+    }
+    #header img{
+        width: 35%;
+        margin-left: 1%;
+    }
+    #aside2 {
+        width: 98%;
+        float: left;
+        margin-top: 100%;      
+    }
+    #aside2 img{
+        width: 98%;
+    }
+}
+@media(max-width:414px){
+    #menu {
+        text-align: center;
+    }
+    #header img{
+        width: 35%;
+        margin-left: 1%;
+    }
+    #aside2 {
+        width: 98%;
+        float: left;
+        margin-top: 100%;      
+    }
+    #aside2 img{
+        width: 98%;
+    }
+}

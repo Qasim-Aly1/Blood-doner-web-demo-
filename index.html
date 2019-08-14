@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="Script/javaScropt.js"></script>
+    <script>
+    function link(e) {
+  e.preventDefault();
+  var link_s = document.getElementById('link_id').value;
+  document.getElementById('link_str').innerHTML = link_s.link()
+}
+    </script>
+</head>
+
+<body>
+
+    <div>
+
+        <div id="contentbody">
+
+            <div id="header">
+                <img src="images/blood.jpg" alt="this is the logo...">
+                <!-- <img class="bloodimage" src="images/blood.png" alt="this is blood donation"> -->
+            </div>
+
+            <div id="menu">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a  class="navbar-brand" href="index.html">BloodBank</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li ><a href="main.html">Home</a></li>
+                            <li><a href="wtb.html">why to give blood</a></li>
+                            <li><a href="form.html">Donate Blood</a></li>
+                            <li><a href="donors.html">Our Blood Donors</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <form onsubmit="link();" id="searchBar">
+                                <input type="text" placeholder="Search.." id="link_id">
+                                <button type="submit" id="link_str" ><i class="fa fa-search"></i></button>
+                            </form>
+                            <li><a href="sign-in.html" id="singup" ><span  class="glyphicon glyphicon-user "></span> Sign Up</a></li>
+                            <li><a href="index.html"  id="login" ><span class="glyphicon glyphicon-log-in "></span> Login</a></li>
+                            <li><a href="index.html" id="btnLogout" class=" btn-danger hide"><span class="glyphicon glyphicon-log-in "></span> Logout</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+
+            <!-- <div style="text-align: center"> -->
+                <div id="slider" class="gallaryContainer">
+                    <div class="sliderShowContainer">
+                        <div id="playPouseBtn"></div>
+                        <div class="leftArrow"><span class="arrow arrowLeft"></span></div>
+                        <div class="rightArrow"><span class="arrow arrowRight"></span></div>
+                        <div class="captionHolder"><p class="captionText"></p></div>
+                        <div class="imageHolder">
+                            <img src="images/showcase.jpg" alt="doc pic" srcset="">
+                            <p class="textCaption"> some texts</p>
+                        </div>
+                        <div  class="imageHolder">
+                            <img src="images/showcase2.jpeg" alt="doc pic" srcset="">
+                            <p>some texts</p>
+                        </div>
+                        <div class="imageHolder">
+                            <img src="images/showcae3.jpg" alt="doc pic" srcset="">
+                            <p>some texts</p>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <!-- <a href="javascript:void(0);" onClick="showPrevious();"> &lt; </a>
+                <a href="javascript:void(0);" onClick="showNext();"> &gt; </a> -->
+                <!-- <div>
+                    <div id="counter"> </div>
+                </div> -->
+                <!-- <div class="circles"></div>
+                <div class="circles"></div>
+                <div class="circles"></div>
+                <div class="circles"></div> -->
+            <!-- </div> -->
+            
+            <div id="right-bar">
+                <h4 id="log_in">Your login is required for more information about this page</h4>
+
+                <h3>About an hour of your time could change someone’s life.</h3>
+                <p>
+
+                    Blood and blood products are a critical part of everyday medical care including major surgeries,
+                    medical procedures, cancer treatments and managing diseases and disorders. As a blood donor you
+                    form a
+                    vital link in Canada's lifeline, helping many Canadians wake up healthy each day.
+                    Your blood type determines who you can donate blood to and receive blood from. There are eight main
+                    blood types organized from a combination of two systems: ABO blood types (A, B, O, AB) and Rh type
+                    (positive or negative).
+
+                    These eight blood types are: O-positive, O-negative, A-positive, A-negative, B-positive,
+                    B-negative,
+                    AB-positive, and AB-negative
+                </p>
+            </div>
+            
+            <div id="header2">
+                <img src="images/healthcare.png" alt="HealthCare">
+                <h3>Health & Care</h3>
+                <h2>Introduction</h2>
+                <p>
+                    The Health Department of the Pakistan Red Crescent was established as early as the establishment of
+                    the
+                    PRC. Presently, the PRC Health Department runs 104 health centres. 69 Health Centres are supported
+                    by
+                    the PRC provincial branches. The remaining 35 Health Centres are supported by the NHQ through
+                    funding
+                    received from the Movement Partners.
+
+                    The PRC is seen as a pioneer and a leader in transfusion medicine and research; it has provided
+                    generations of Pakistanis with blood products that are safe and reliable. It also has extensive
+                    Ambulance Services and First Aid Services.
+
+                    The PRC has also been developing long-term programming such as HIV/AIDS prevention and awareness
+                    program and Community Base Health and First Aid. It also conducts regular health awareness training
+                    on
+                    various issues of public health priority.
+
+                    In addition to the above-mentioned programs, the PRC Health Department has developed its capacity
+                    to
+                    respond effectively to health emergencies at the national level.
+
+                    Since the 2005 earthquake operation, the PRC health team has built up emergency health stocks
+                    besides
+                    developing its capacity to effectively respond to natural and man-made disasters, disease outbreaks
+                    etc.
+
+                    The PRC Health and Care Strategy 2011-2015 describes three situational settings for health
+                    interventions; emergency health situations, peace time/normal circumstances and disaster
+                    situations.
+                </p>
+            </div>
+
+            <div id="header3">
+                <img src="images/support.jpg" alt="HealthCare">
+                <h3>Suppoters</h3>
+                <h2>Introduction</h2>
+                <p>
+                    The Health Department of the Pakistan Red Crescent was established as early as the establishment of
+                    the
+                    PRC. Presently, the PRC Health Department runs 104 health centres. 69 Health Centres are supported
+                    by
+                    the PRC provincial branches. The remaining 35 Health Centres are supported by the NHQ through
+                    funding
+                    received from the Movement Partners.
+
+                    The PRC is seen as a pioneer and a leader in transfusion medicine and research; it has provided
+                    generations of Pakistanis with blood products that are safe and reliable. It also has extensive
+                    Ambulance Services and First Aid Services.
+
+                    The PRC has also been developing long-term programming such as HIV/AIDS prevention and awareness
+                    program and Community Base Health and First Aid. It also conducts regular health awareness training
+                    on
+                    various issues of public health priority.
+
+                    In addition to the above-mentioned programs, the PRC Health Department has developed its capacity
+                    to
+                    respond effectively to health emergencies at the national level.
+
+                    Since the 2005 earthquake operation, the PRC health team has built up emergency health stocks
+                    besides
+                    developing its capacity to effectively respond to natural and man-made disasters, disease outbreaks
+                    etc.
+
+                    The PRC Health and Care Strategy 2011-2015 describes three situational settings for health
+                    interventions; emergency health situations, peace time/normal circumstances and disaster
+                    situations.
+                </p>
+            </div>
+
+            <div id="footer">
+                <p>Blood Donation Web alright resived &copy; 2019</p>
+            </div>
+        </div>
+    </div>
+    <!-- for login -->
+
+        <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+
+        <script src="Script/app.js"></script>
+        
+
+        <!-- <script>
+            var images = ["images/doc.jpg", "images/showcae3.jpg", "images/showcase2.jpeg"];
+            var totalImages = 3;
+            var currentImage = 0;
+            var next = true;
+            showNext();
+            setInterval(function () {
+                showNext();
+            }, 5000)
+            function showNext() {
+                if (!next) currentImage++;
+                if (currentImage == totalImages) currentImage = 0;
+                document.getElementById("slider").innerHTML = "<img src='" + images[currentImage] + "' class='setValue' />"
+                dotCircles()
+                currentImage++;
+                next = true;
+            }
+            function showPrevious() {
+                if (next) currentImage--;
+                if (currentImage == 0) currentImage = totalImages;
+                document.getElementById("slider").innerHTML = "<img src='" + images[currentImage - 1] + "' class='setValue' />"
+                currentImage--;
+                dotCircles();
+                next = false;
+            }
+            function dotCircles() {
+                var a = document.getElementsByClassName("circles");
+                for (var i = 0; i < a.length; i++) {
+                    if (i == currentImage) {
+                        a[i].id = "changeBackground";
+                    }
+                    else {
+                        a[i].id = "removeBackground";
+                    }
+                }
+            }
+        </script> -->
+        <!-- <script>
+        var slideIndex,slides,dots,captionText;
+function initGallery(){
+  sliderIndex = 0;
+  slides = document.getElementById("images");
+  slides[slideIndex].style.opacity = 1;
+  alert("yess");
+}
+initGallery();
+        </script> -->
+
+</body>
+
+</html>

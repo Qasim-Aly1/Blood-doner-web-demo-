@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form </title>
+    <link rel="stylesheet" href="Css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="contentbody">
+        <div id="header">
+            <img src="images/blood.jpg" alt="this is the logo...">
+            <!-- <img class="bloodimage" src="images/blood.png" alt="this is blood donation"> -->
+        </div>
+        <div id="menu">
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">BloodBank</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li><a href="main.html">Home</a></li>
+                        <li><a href="wtb.html">why to give blood</a></li>
+                        <li class="active"><a href="form.html">Donate Blood</a></li>
+                        <li><a href="donors.html">Our Blood Donors</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span> Sign
+                                Up</a></li>
+                        <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    </ul>
+
+                </div>
+            </nav>
+            <div id="donationform">
+                <h1>Blood Donor Registration Form</h1>
+                <form id="dontion-form" onsubmit=" return ;">
+                    <label for="username">Donar Name:</label>
+                    <input type="text" id="username" name="name" class="inpt" placeholder="Enter you Name" ><br>
+                    <label for="username" id="user_name">user Email:</label>
+                    <input type="text" id="email" name="email" class="inpt" placeholder="Enter you Email" ><br>
+                    <label for="gender">Gender: </label>
+                        <input type="radio" name="gender" class="inp" value="male" > <span class="gn">male</span>
+                        <input type="radio" name="gender" class="inp" value="female" > <span class="gn">female</span><br>
+                        
+                        <label for="username">Donar Age:</label>
+                        <input type="number" id="username" name="name" class="inpt" placeholder="Enter you Age" ><br>
+                        
+                        <label for="gender">Have you Donate befor: </label>
+                            <input type="radio" name="gender" class="inp" value="Yes" > <span class="gn">Yes</span>
+                            <input type="radio" name="gender" class="inp" value="No" > <span class="gn">No</span><br>
+
+                    <label for="bg">Blood Group:</label> 
+                    <!-- <input type="text" name="" id="bg" placeholder="+,-,A,B,AB,A+,A-" > -->
+                    <select name="bloodgroup" id="bg" class="inpt" name="blood">
+                        <option value="A+" name="blood">A+</option>
+                        <option value="O+" name="blood">O+</option>
+                        <option value="B+" name="blood">B+</option>
+                        <option value="AB+" name="blood">AB+</option>
+                        <option value="A-" name="blood">A-</option>
+                        <option value="O-" name="blood">O-</option>
+                        <option value="B-" name="blood">B-</option>
+                        <option value="Ab-" name="blood">Ab-</option>
+                    </select>
+                    <br>
+                    <label for="contact">Contact No:</label>
+                    <input type="number" name="number" placeholder="Enter your Number" id="cnct" class="inpt"><br>
+                    <label for="contact">Address:</label>
+                    <input type="text" name="address" placeholder="Enter your Address" id="add" class="inpt"><br>
+                    <input  type="submit" value="submit" id="sub">
+                </form>
+                <h2>Blood Donors Should Know </h2>
+                <ul>
+                    <li>Be healthy - not suffering from a cold, flu
+                        or other illness at the time of donation.</li>
+                    <li>Be aged between 17 and 70 years.</li>
+                    <li>Hb level above 12.5gm/dl.</li>
+                    <li>Weigh at least 45kg.</li>
+                    <li>Have normal temperature and blood
+                        pressure.</li>
+                    <li>Blood can be donated after 60 days of previous donation </li>
+                    <li>Meet guidelines designed to protect both
+                        the donor and the people who will receive
+                        the blood.</li>
+                </ul>
+                <h2>Thank you for Donating Blood Today!</h2>
+                <p>Adapted From: Technical manual. 17th editon: American Association of Blood Bank</p>
+            </div>
+            <div id="footer">
+                <p>Blood Donation Web alright resived &copy; 2019</p>
+
+            </div>
+        </div>
+
+        <script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+        <script>
+            // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyCIWT0HdPKmD_QP3Z8p0arPXe6Pc29-LPU",
+                authDomain: "rehmat-d723d.firebaseapp.com",
+                databaseURL: "https://rehmat-d723d.firebaseio.com",
+                projectId: "rehmat-d723d",
+                storageBucket: "rehmat-d723d.appspot.com",
+                messagingSenderId: "120765740952"
+            };
+            firebase.initializeApp(config);
+        </script>
+        <!-- <script src="script.js"></script> -->
+        <script>
+            document.querySelector('#dontion-form').addEventListener('submit', function (e) {
+                e.preventDefault();
+                sumbitClick();
+            });
+            var db = firebase.firestore();
+            function sumbitClick() {
+                var name_field = document.getElementById("username").value;
+                var email_field = document.getElementById("email").value;
+                var gender = document.querySelector('input[name="gender"]:checked').value;
+                var bloodgroup = document.querySelector("[name='blood']:checked").value;
+                var contct = document.getElementById("cnct").value;
+                var adres = document.getElementById("add").value;
+
+                // db.collection('data').get('asdasd', function () {
+                //     if (!exist) {
+                db.collection("data").add({
+                    Email: name_field,
+                    Name: email_field,
+                    Gender: gender,
+                    BloodType: bloodgroup,
+                    contact: contct,
+                    Address: adres
+                })
+                    .then(function () {
+                        alert("Your form has been submitted thank you for form submitting ");
+                        location.href = 'main.html';
+                    })
+                    .catch(function (error) {
+                        console.error("Error writing document: ", error);
+                    });
+                
+            }
+
+            // validation
+            function validate() {
+                var userName = document.getElementById('username').value;
+
+                var userchech = /^[A-Za-z]{3,30}$/;
+               
+                if (userchech.test(userName)) {
+                    document.getElementById('username').inputMode = " ";
+                }
+                else {
+                    document.getElementById('username').alert("name is invalid");
+                    return false
+                }
+
+
+            }
+        </script>
+
+</body>
+
+</html>

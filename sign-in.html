@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+ 
+     <!-- jQuery library  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+
+</head>
+<body>
+        <div id="login_di">
+                <div id="contentbody">
+                    <div id="header">
+                        <img src="images/blood.jpg" alt="this is the logo...">
+                        <!-- <img class="bloodimage" src="images/blood.png" alt="this is blood donation"> -->
+                    </div>
+                    <div id="menu">
+                        <nav class="navbar navbar-inverse" id="pera">
+                            <div class="container-fluid">
+                                <div class="navbar-header">
+                                    <a class="navbar-brand" href="index.html">BloodBank</a>
+                                </div>
+                                <ul class="nav navbar-nav">
+                                    <li><a href="main.html">Home</a></li>
+                                    <li><a href="wtb.html">why to give blood</a></li>
+                                    <li><a href="form.html">Donate Blood</a></li>
+                                    <li><a href="donors.html">Our Blood Donors</a></li>
+                                </ul>
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                                    <li><a href="form_login.html"><span
+                                                class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                                </ul>
+        
+                            </div>
+                        </nav>
+                        <div id="form">
+                            <form  id="login_form" class="form">
+                                <img id="lgo" src="images/download.png" alt="" width="150px"><br>
+                                <h2>Register</h2>
+                                <p>please fill this create an acount.</p>
+                                <label for="useremail">Email:</label><br>
+                                <input type="email" id="email_flied" ><br>
+                                <label for="pass" id="pas">Create Password:</label><br>
+                                <input type="password" id="password_flied"  ><br>
+                                <label for="pass" id="pas">Confirm:</label><br>
+                                <input type="password" id="password_cnfrm"  ><br><br>
+                                <p>By creating an acount you agree to our <a href="#">Terms</a> &amp; <a href="#"> Privcy</a> </p>
+                                <button id="btnSignin" >Sgin Up </button><br> <br>
+                                <p>Already have an acount? <a href="form_login.html">Sign in</a> </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- <script src="script/app.js"></script> -->
+
+                <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+                <script>
+                  // Initialize Firebase
+                  var config = {
+                    apiKey: "AIzaSyBnSIAvtsqVUneqyyNPUM9xsvv-pAZyBOs",
+                    authDomain: "test-f80d0.firebaseapp.com",
+                    databaseURL: "https://test-f80d0.firebaseio.com",
+                    projectId: "test-f80d0",
+                    storageBucket: "test-f80d0.appspot.com",
+                    messagingSenderId: "279349108302"
+                  };
+                  firebase.initializeApp(config);
+                
+                  function signUp(){
+                      window.location.href ="sign-in.html";
+                  }
+
+                //   Add event for Sign Up
+                const userEmail = document.getElementById('email_flied');
+                const userPass = document.getElementById('password_flied');
+                const cnfrmPass = document.getElementById('password_cnfrm');
+                const btnSignUp = document.getElementById('btnSignin');
+
+
+                btnSignUp.addEventListener('click', e=>{
+                    e.preventDefault()
+    // get email and pass 
+    const email = userEmail.value;
+    const pass = userPass.value;
+    const cnfrm = cnfrmPass.value;
+    const auth = firebase.auth;
+
+    auth().createUserWithEmailAndPassword(email, pass,).then((user)=>{
+        alert("Signup successful");
+        console.log(user)
+    })
+    .catch(function(error) {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // [START_EXCLUDE]
+    if (errorCode == 'auth/weak-password') {
+      alert('The password is too weak.');
+    }else if(cnfrm !== pass){
+        alert("Passwor is not same please confirm it ");
+    }
+     else {
+      alert(errorMessage);
+    }
+    alert(error);
+    // [END_EXCLUDE]
+  });
+});
+
+firebase.auth().onAuthStateChanged(function(user){
+         if(user){
+            //  console.log(user);
+            // btnLogout.classList.remove('hide');
+            const user = firebase.auth().currentUser;
+            email = user.email;
+            alert('Email'+ email);
+            if(!window.location.href.includes("index.html")){
+
+window.location.href = "index.html";
+}
+            // window.location.href = "index.html";
+         }
+        //  else{
+        //     btnLogout.classList.add('hide'); 
+        //  }
+     });
+
+
+                </script>            
+              
+</body>
+</html>

@@ -1,0 +1,671 @@
+
+body{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contentbody{
+    margin: 2% 10% auto 10%;
+    border: 1px greenyellow solid;
+    /* background-color: #eeeeee;  */
+}
+#header{
+    margin: auto;
+    padding: 0%;
+    height: 100px;
+    background-color: #222222;
+}
+#header img{
+    width: 10%;
+    height: 99%;
+    border-radius: 2cm;
+}
+
+#slider{
+    /* padding: %; */
+}
+.gallaryContainer{
+    width: 100%;
+    height: 500px;
+    /* max-width: 100px; */
+    user-select: none;
+    box-shadow: 0px 0px 2px 1px #00000078;
+}
+.gallaryContainer .sliderShowContainer{
+    width: 100%;
+    height: 98%;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: relative;
+}
+.gallaryContainer .sliderShowContainer .imageHolder{
+   /* opacity: 0; */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.gallaryContainer .sliderShowContainer .imageHolder img{
+    width: 100%;
+    height: 100%;
+}
+.gallaryContainer .sliderShowContainer .imageHolder .textCaption{
+    display: none;
+}
+.gallaryContainer .sliderShowContainer .leftArrow, .gallaryContainer .sliderShowContainer .rightArrow{
+    width: 50px;
+    background: #00000036;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: background 0.5s;
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+} 
+.gallaryContainer .sliderShowContainer .rightArrow{
+    left: auto;
+    right: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.gallaryContainer .sliderShowContainer .rightArrow:hover, .gallaryContainer .sliderShowContainer .leftArrow:hover{
+    background: #000000a8;
+    cursor: pointer;
+}
+.gallaryContainer .sliderShowContainer .arrow{
+    display: inline-block;
+    border: 3px solid white;
+    width: 10px;
+    height: 10px;
+    border-left: none;
+    border-bottom: none;
+    margin: auto 40% auto;
+    position: absolute;
+    left: 0;
+    right: o;
+    top: 0;
+    bottom: 0;
+
+}
+.gallaryContainer .sliderShowContainer .arrow.arrowLeft{
+    transform: rotateZ(-135deg);
+}
+.gallaryContainer .sliderShowContainer .arrow.arrowRight{
+    transform: rotateZ(45deg);
+}
+.gallaryContainer .sliderShowContainer>.captionHolder{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    color: #cccccc;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    background: #00000047;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden; 
+}
+.gallaryContainer .sliderShowContainer>.captionHolder>.captionText{
+    margin: 0;
+}
+.gallaryContainer .sliderShowContainer #playPouseBtn{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    z-index: 5;
+    margin: 5px;
+    background-image: url(images/playpouse.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#slider img{
+    width: 100%;
+    height: 100%;
+}
+#right-bar{
+    border-radius: 13px;
+    margin: 2%;
+    margin: 2%;
+}
+#right-bar h3{
+    color: #5c5cb3;
+    font-weight: bold;
+}
+#right-nav{
+    width: 52%;
+    height: 45%;
+    padding: 2%;
+    float: left;
+
+}
+#right-nav h2{
+    color: #5c5cb3;
+    font-weight: bold;
+}
+#right-nav h3{
+    color: #5c5cb3;
+    font-weight: bold;
+}
+
+#leftimage{
+    height: 35%;
+    width: 48%;
+    float: right;  
+    padding: 2%; 
+}
+#leftimage img{
+    width: 90%;
+    border-radius: 5cm;
+    margin-left: 4%;
+    height: 320px;
+    
+}
+
+  #header2{
+    margin-top: 30%;
+    /* padding: 4%; */
+    
+}
+#header2 #imgg{
+    background-image: url(../images/aku.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    max-height: 50%;
+    height: 600px;
+    width: 100%;
+    margin-top: 35%;  
+}
+#header2 h2{
+    padding: 2%;
+    color: #5c5cb3;
+    font-weight: bold;
+}
+
+ #header2 ul{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 2%;
+    font-weight: 300;
+    width: 85%;
+
+}
+
+#header2 ul li{
+    margin: 1%;
+    padding: 1%;
+    font-weight: 400px;
+}
+#header2 ul strong{
+    font-weight: bold;
+    color: #141414;
+    
+}
+#header2 .pic{
+    height: 25%;
+    width: 46%;
+    margin: 4%;
+    float: right;
+}
+#header3{
+    width: 90%;
+    margin: 4%;
+    padding: 2%;
+}
+#header3 img{
+    width: 98%;
+    height: 25%;;
+}
+#header3 h2{
+    text-align: center;
+    padding: 2%;
+    color: #5c5cb3;
+    font-weight: bold;
+}
+#header3 .para{
+    float: right;
+    margin: auto;
+    padding: 1%;
+    color: #7a2828;
+}
+#header3 table{
+    font-family: Arial, Helvetica, sans-serif; 
+    border: 2px solid #252424;
+    background-color: #add195;
+    width: 99%;
+    height: 25%;;
+    margin: 1%;
+    text-align: center;
+
+}
+#header3 table th{
+    background-color: #bd0f0f;
+    border: 1px solid #464444;
+    padding: 2%;
+    font-weight: bold;
+    color: #f7f7f7;
+    text-align: center;
+}
+#header3 table td{
+    border: 1px solid #464444;
+    padding: 2%;
+    font-weight: bolder;
+    }
+#header3 table .txt{
+    color: #a80f0f;
+}
+.form{
+    border: #b85a5a;
+}
+#header4 {
+    padding: 2%;
+    margin: auto;
+}
+#header4 h2{
+    margin: 3%;
+    text-align: center;
+    color: #5c5cb3;
+    font-weight: bold;} 
+#header4 ul li{
+    padding: 1%;
+
+}
+#img{
+    padding: 1%;
+    margin: auto;
+}
+#img img{
+    height: 50%;
+    width: 99%;
+}
+#img ul li{
+    margin: 0%;
+    padding: 1%;
+}
+#container h1{
+    color: #5c5cb3;
+    font-weight: bold;
+}
+#container form{
+    width: 98%;
+    padding: 4%;
+}
+.contain {
+    padding: 1%;
+}
+#footer{
+    padding: 3% 35% 3% 35%;
+    background-color: #222222;;
+    color: #cccccc;
+}
+
+#userDiv{
+    display: none;
+}
+#donationform{
+    width: 80%;
+    margin-left: 15%;
+}
+#donationform h1{
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+    text-align: center;
+    color: #5c5cb3;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+#donationform h2, p{
+    text-align: center;
+}
+label{
+    width: 20%;
+    text-transform: capitalize;
+}
+.inpt{
+    border-radius: 4px;
+    width: 65%;
+    margin: 2% 0 2% 4%; 
+    padding: 2%;  
+    font-weight: bold;
+    background-color: #ececec;    
+}
+.inpt:hover{
+    font-weight: bold;
+    color: #252424;
+    text-shadow: #252424  2px;
+}
+.inp{
+    width: 10%;
+    padding: 5%;
+    height: 30px;
+}
+.gn{
+    text-transform: capitalize;
+}
+#donationform .gnd{
+    width: 30px;
+    margin-left: 30px;
+    margin-right: 45px; 
+    margin-left: 10px; 
+    padding-top: 30px;
+    text-align: center;
+}
+#sub{
+    width: 20%;
+    margin-left: 63%; 
+    margin-bottom: 4%; 
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2%;
+}
+#searchBar{
+    margin-top: 2.5%;
+    float: left;
+}
+#sub:hover{
+    color: #1a1818;
+    background-color: #969696;
+    font-weight: bolder;
+}
+#login_form{
+        border: 1px greenyellow solid;
+        width: 30%;
+        padding: 5%;
+        margin: 2% 30% 4% 35%;
+        border-radius: 2rem
+
+}
+#login_form input{
+    width: 98%;;
+    height: 47px;
+    border-radius: 2px;    
+}
+ #btnLogin{
+    margin-top: 10px;
+    width: 98%;
+    height: 55px;
+}
+#btn{
+    margin-top: 10px;
+    width: 98%;
+    height: 55px;
+}
+#lgo{
+    width: 65%;
+    padding: 2%;
+    margin-left: 18%;
+    margin-bottom: 6%;
+}
+#btnSignin{
+    margin-top: 10px;
+    width: 98%;
+    height: 55px;
+} 
+#btnSignin:hover{
+    background-color: #222222;
+    color: #cccccc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#btn:hover{
+    background-color: #222222;
+    color: #cccccc;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+#btnLogin:hover{
+    background-color: #222222;
+    color: #cccccc;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+/* media quire */
+ @media(max-width:768px){
+    body{
+        position: absolute;
+    }
+    #menu .navbar-brand{
+        text-align: center;
+    }
+    #right-bar{
+        padding: 4%;
+
+    }
+    #menu{
+        text-align: center;
+    }
+    #header img{
+        width: 12.5%;
+        margin-left: 1%;
+    }
+
+    #header2{
+        padding: 4%;
+        margin: 2%;
+        display: none;
+
+    }
+    #header3{
+        padding: 4%;
+        margin: 2%;
+    }
+    #header3 h3{
+        float: left;
+        margin: 6.2%;
+    }
+    form{
+    margin-right: 4%;
+    /* float: right; */
+    }
+    #form{
+        text-align: center;      
+    }
+    #form input[type="email"]{
+width: 95%;
+    } 
+    #form input[type="password"]{
+        width: 95%;
+            }
+    #form #btnSigninLogin{
+        width: 95%;
+    }
+    #login_form{
+        width: 60%;
+        /* float: left; */
+        margin: auto;
+    }
+    #lgo{
+        margin-left: 3%;
+    }
+    #donationform{
+        width: 90%;
+        margin: auto;
+    }
+    #donationform h3{
+        text-align: center;
+        margin-left: 4%;
+    }
+    #dontion-form{
+        margin-bottom: 10%;
+    }
+    #dontion-form input{
+        width: 90%;
+        text-align: center;
+    }        
+    #sub{
+        margin-left: 0;
+        margin-top: 2%;
+        
+    }
+    #btnSignin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #btnLogin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+} 
+@media(max-width:375px){
+    body{
+        position: absolute;
+    }
+
+    #header img{
+        width: 30%;
+        margin-left: 1%;
+    }
+    #right-bar{
+        widows: 100%;
+        display: none;
+         float: left;
+    }
+    #header2 .pic{
+        float: left;
+    }
+    #leftimage{
+        width: 98%;
+        margin: 2%;
+    }
+    #right-nav{
+       width:  98%
+    }
+    #form{
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    #donationform{
+        width: 90%;
+        /* float: left; */
+        margin: auto;
+    }
+    #donationform h3{
+        text-align: center;
+        margin-left: 2%;
+    }
+    #dontion-form{
+        margin-bottom: 10%;
+    }
+    #dontion-form input{
+        width: 90%;
+        text-align: center;
+    }
+    #dontion-form input[type="radio"]{
+        display: grid;
+        grid-auto-columns: 1fr;
+    }
+    #btnSignin{
+        margin-top: 10px;
+        width: 90%;
+        height: 55px;
+    }
+    #btnSignin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #btnLogin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+
+}
+
+@media(max-width:1024px){
+    #header img{
+        width: 13%;
+        margin-left: 1%;
+    }
+    #btnSignin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #btnLogin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+
+}
+/* mobile */
+@media(max-width:414px){
+    #header img{
+        width: 30%;
+        margin-left: 1%;
+    }
+    #right-bar{
+        widows: 100%;
+        display: none;
+         float: left;
+    }
+    #header2 .pic{
+        float: left;
+    }
+    #leftimage{
+        width: 98%;
+        margin: 2%;
+    }
+    #right-nav{
+       width:  98%
+    }
+    #form{
+        margin-top: 25%;
+        margin-bottom: 25%;
+    }
+    #donationform{
+        width: 90%;
+        /* float: left; */
+        margin: auto;
+    }
+    #donationform h3{
+        text-align: center;
+        margin-left: 2%;
+    }
+    #dontion-form{
+        margin-bottom: 10%;
+    }
+    #dontion-form input{
+        width: 90%;
+        text-align: center;
+    }
+    #dontion-form input[type="radio"]{
+        display: grid;
+        grid-auto-columns: 1fr;
+    }
+    #btnSignin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    #btnLogin:hover{
+        background-color: #222222;
+        color: #cccccc;
+        font-weight: bold;
+        text-transform: uppercase;
+    
+    }
+
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+    integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+    integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div id="user">
+        <div id="contentbody">
+            <div id="header">
+                <img src="images/blood.jpg" alt="this is the logo...">
+                <!-- <img class="bloodimage" src="images/blood.png" alt="this is blood donation"> -->
+            </div>
+            <div id="menu">
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <a class="navbar-brand" href="index.html">BloodBank</a>
+                        </div>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="main.html">Home</a></li>
+                            <li><a href="wtb.html">why to give blood</a></li>
+                            <li><a href="form.html">Donate Blood</a></li>
+                            <li><a href="donors.html">Our Blood Donors</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="sign-in.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                            <li><a href="index.html" onclick="login()"><span class="glyphicon glyphicon-log-in"></span>
+                                    Login</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+            </div>
+            <div id="right-nav">
+                <h3>About an hour of your time could change someone’s life.</h3>
+                <p>
+
+                    Blood and blood products are a critical part of everyday medical care including major surgeries,
+                    medical procedures, cancer treatments and managing diseases and disorders. As a blood donor you
+                    form a
+                    vital link in Canada's lifeline, helping many Canadians wake up healthy each day.
+                    Your blood type determines who you can donate blood to and receive blood from. There are eight main
+                    blood types organized from a combination of two systems: ABO blood types (A, B, O, AB) and Rh type
+                    (positive or negative).
+
+                    These eight blood types are: O-positive, O-negative, A-positive, A-negative, B-positive,
+                    B-negative,
+                    AB-positive, and AB-negative
+                    
+                </p>
+            </div>
+            <div id="leftimage">
+                <img src="images/showcase.jpg" alt="doctor">
+            </div>
+          
+
+            <div id="header2">
+                <div id="imgg">
+                </div>
+               
+                <h2>Different types of blood donation</h2>
+                <p>
+                    <ul>
+                        <li><strong> Homologous </strong> - a whole blood donation,
+                            consisting of plasma, red and white blood
+                            cells, platelets, antibodies and other
+                            components</li>
+                        <li><strong> Plasma donation </strong> - this procedure is
+                            known as aphaeresis. Plasma is
+                            separated from the other components by
+                            a special machine, then the red blood cells
+                            are delivered back to the donor.</li>
+                        <li><strong> Platelet donation</strong> - this procedure is
+                            known as plateletpheresis. Only platelets
+                            are collected from the donor’s blood</li>
+                    </ul>
+                </p>
+                <img src="images/Screenshot (10).png" alt="HealthCare" class="pic">
+    
+                <h2>Contd.</h2>
+                <p>
+                    <ul>
+                        <li><strong> Autologous collection </strong>- a person
+                            planning to undergo elective surgery
+                            can give blood for their own use.</li>
+                        <li><strong> Directed blood donation </strong> - donors can
+                            give blood that will be used for a
+                            specific patient only.</li>
+                        <li>Donating blood only takes around 10
+                            minutes</li>
+                        <li>One can donate 470ml of whole
+                            blood every 12 weeks</li>
+                        <li>One can donate plasma every two
+                            week</li>
+                        <li>Plasma - plasma is the liquid
+                            component of blood. A donation of
+                            plasma helps to boost blood volume.</li>
+                        <li>Cryoprecipitate - this substance is
+                            found in plasma and contains clotting
+                            factors. Cryoprecipitate can be
+                            isolated from plasma and is
+                            commonly used to treat severe
+                            haemorrhage.</li>
+                    </ul>
+                </p>
+            </div>
+            <div id="header3">
+                <h2>ABO Blood Typing and Compatibility</h2>
+                <table>
+                    <tr>
+                        <th>Patient RBC <br> Anti-A &nbsp; Anti-B</th>
+                        <th>Patient Plasma <br> A cells &nbsp; B cells </th>
+                        <th>ABO Group</th>
+                        <th>Compatible RBCS</th>
+                        <th>Compatible Plasma</th>
+                    </tr>
+                    <tr>
+                        <td>+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -</td>
+                        <td>- &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; +</td>
+                        <td class="txt">A</td>
+                        <td class="txt">A.O</td>
+                        <td class="txt">A.AB</td>
+                    </tr>
+                    <tr>
+                        <td>- &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; +</td>
+                        <td>+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -</td>
+                        <td class="txt">B</td>
+                        <td class="txt">B.O</td>
+                        <td class="txt">B.AB</td>
+                    </tr>
+                    <tr>
+                        <td>+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; +</td>
+                        <td>- &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -</td>
+                        <td class="txt">AB</td>
+                        <td class="txt">AB.A.B.O</td>
+                        <td class="txt">Only AB</td>
+                    </tr>
+                    <tr>
+                        <td>- &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; -</td>
+                        <td>+ &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; +</td>
+                        <td class="txt">O</td>
+                        <td class="txt">Only O</td>
+                        <td class="txt">O.A.B.AB</td>
+                    </tr>
+                </table>
+                <p class="para">*+ indicates a positive test; - indicates a negative test</p>
+            </div>
+            <div id="header4">
+                
+            </div>
+            <div id="img">
+                <img src="images/Screenshot (13).png" alt="ABO blood system">
+                <ul>
+                    <li>Unique in that it is the only blood group
+                        system where reciprocal or antithetical
+                        Abs are present with no prior exposure to
+                        Ag</li>
+                    <li>“naturally occurring” antibodies</li>
+                    <li>Reason why ABO compatibility is so
+                        important in transfusion testing</li>
+                    <li>Provide the tools for ABO testing</li>
+                </ul>
+            </div>
+           
+            <div id="footer">
+                <p>Blood Donation Web alright resived &copy; 2019</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
